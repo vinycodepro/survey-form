@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleform.css">
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">SAMPLE SURVEY FORM</h1>
+    <p id="description">
+      This form is meant to be filled out honestly and openly by participants.
+    </p>
+
+    <form id="survey-form">
+
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" name="name" type="text" required placeholder="Enter your name"><br><br>
+
+      <label id="email-label" for="email">Email:</label>
+      <input id="email" name="email" type="email" required placeholder="Enter your email"><br><br>
+
+      <label id="number-label" for="number">Age:</label>
+      <input id="number" name="age" type="number" min="12" max="70" placeholder="Age"><br><br>
+
+      <label for="dropdown">Choose your preferred climate:</label>
+      <select id="dropdown" name="climate">
+        <option value="sunny-tropical" selected>Sunny & Tropical</option>
+        <option value="cold-snowy">Cold & Snowy</option>
+        <option value="rainy-peaceful">Rainy & Peaceful</option>
+        <option value="moderate-green">Moderate and Green</option>
+      </select><br><br>
+
+      <fieldset>
+        <legend>Choose your preferred destination:</legend>
+        <label><input name="destination" value="island" type="radio"> Island</label><br>
+        <label><input name="destination" value="mountain" type="radio"> Mountain</label><br>
+        <label><input name="destination" value="city" type="radio"> City</label><br>
+        <label><input name="destination" value="countryside" type="radio"> Countryside</label>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Choose your activities:</legend>
+        <label><input type="checkbox" name="activity" value="relaxing-on-the-bench"> Relaxing on the bench</label><br>
+        <label><input type="checkbox" name="activity" value="adventure-sports"> Adventure sports</label><br>
+        <label><input type="checkbox" name="activity" value="cultural-exploration"> Cultural exploration</label><br>
+        <label><input type="checkbox" name="activity" value="shopping-spree"> Shopping spree</label>
+      </fieldset><br>
+
+      <label for="comments">Additional comments:</label><br>
+      <textarea id="comments" name="comments" placeholder="Your thoughts..." rows="4" cols="40"></textarea><br><br>
+
+      <input id="submit" type="submit" value="Send">
+    </form>
+  </body>
+</html>
